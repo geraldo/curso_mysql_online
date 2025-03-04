@@ -2,7 +2,7 @@
 
 ## Temario día 1
 
-![Presentación día 1](mysql_dia1.pdf)
+[Presentación día 1](mysql_dia1.pdf)
 
 1. Introducción a MySQL
 	1. Historia y características de MySQL/MariaDB
@@ -19,7 +19,7 @@
 
 ## Temario día 2
 
-![Presentación día 2](mysql_dia2.pdf)
+[Presentación día 2](mysql_dia2.pdf)
 
 4. Herramientas de administración alternativas
 
@@ -33,7 +33,7 @@
 
 ## Temario día 3
 
-![Presentación día 3](mysql_dia3.pdf)
+[Presentación día 3](mysql_dia3.pdf)
 
 7. Funciones y vistas
 	1. Funciones de MySQL
@@ -63,7 +63,7 @@
 
 ## Temario día 4
 
-![Presentación día 4](mysql_dia4.pdf)
+[Presentación día 4](mysql_dia4.pdf)
 
 12. Conexión de una base de datos con un sitio web
 	1. Introducción a PHP
