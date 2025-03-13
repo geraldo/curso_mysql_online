@@ -3,7 +3,7 @@
         private $servername = "localhost";
         private $username = "root";
         private $password = "";
-        private $db = "cibernarium_courses";
+        private $db = "cibernarium_cursos";
 
         public $conn;
 
