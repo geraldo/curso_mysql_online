@@ -48,18 +48,18 @@ SELECT municipi, descripcio_sector, SUM(consum_kwh)
 
 -- 7. Mostramos un listado de todos los consumos privados por provincia en 2022.
 
-SELECT m.codiprov, SUM(consum_kwh)
+SELECT m.nomprov, SUM(c.consum_kwh)
 	FROM municipis AS m 
 	CROSS JOIN consums_electrics AS c
 		ON m.nommuni = c.municipi
 		WHERE descripcio_sector="USOS DOMESTICS" AND anyo = 2022
-	GROUP BY m.codiprov
+	GROUP BY m.nomprov
 	ORDER BY COUNT(*) DESC
 ;
 
 -- 8. Mostramos un listado de todos los consumos privados por municipio y habitante en el 2022.
 
-SELECT m.nommuni, consum_kwh/m.habitants as consum
+SELECT m.nommuni, c.consum_kwh/m.habitants as consum
 	FROM municipis AS m 
 	CROSS JOIN consums_electrics AS c
 		ON m.nommuni = c.municipi
