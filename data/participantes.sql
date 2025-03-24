@@ -32,7 +32,7 @@ CREATE TABLE `participantes` (
   `nombre` varchar(50) NOT NULL,
   `direccion` varchar(250) DEFAULT NULL,
   `curso_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `participantes`

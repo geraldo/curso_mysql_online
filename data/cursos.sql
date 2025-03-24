@@ -32,7 +32,7 @@ CREATE TABLE `cursos` (
   `titulo` varchar(100) NOT NULL,
   `tutor` varchar(50) NOT NULL,
   `fecha_comienzo` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 --
 -- Dumping data for table `cursos`
