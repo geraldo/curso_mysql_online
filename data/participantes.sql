@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1deb5ubuntu1
+-- version 5.2.1deb3
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 19, 2025 at 01:05 PM
--- Server version: 8.0.41-0ubuntu0.22.04.1
--- PHP Version: 8.1.2-1ubuntu2.20
+-- Generation Time: Sep 23, 2025 at 10:55 AM
+-- Server version: 10.11.13-MariaDB-0ubuntu0.24.04.1
+-- PHP Version: 8.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,22 +28,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `participantes` (
-  `participante_id` int NOT NULL,
+  `participante_id` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `direccion` varchar(250) DEFAULT NULL,
-  `curso_id` int NOT NULL
-);
+  `direccion` varchar(100) NOT NULL,
+  `curso_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `participantes`
 --
 
 INSERT INTO `participantes` (`participante_id`, `nombre`, `direccion`, `curso_id`) VALUES
-(1, 'Elena', 'Barcelona', 1),
-(2, 'César', 'Girona', 1),
-(3, 'Miquel', 'Tarragona', 1),
-(4, 'Jorge', 'Manresa', 1),
-(5, 'Jorge', 'Manresa', 1);
+(1, 'Marta', 'Barcelona', 1),
+(2, 'Miguel', 'Girona', 1),
+(3, 'Zou', 'Barcelona', 2),
+(4, 'Serena', 'Sabadell', 2);
 
 --
 -- Indexes for dumped tables
@@ -64,7 +63,7 @@ ALTER TABLE `participantes`
 -- AUTO_INCREMENT for table `participantes`
 --
 ALTER TABLE `participantes`
-  MODIFY `participante_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `participante_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
