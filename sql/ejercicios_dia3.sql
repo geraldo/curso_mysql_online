@@ -33,3 +33,11 @@ ON m.codimuni = c.`Codi municipi_6`
 WHERE ESO="ESO"
 GROUP BY m.nomprov
 ORDER BY count(*) DESC;
+
+
+-- Actualizar todos los datos de una columna usando su valor original
+
+UPDATE participantes AS p1
+SET direccion = (
+    CONCAT((SELECT direccion FROM participantes AS p2 WHERE p1.participante_id = p2.participante_id), " (Catalunya)")
+);
